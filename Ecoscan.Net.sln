@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2046
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibTiff", "LibTiff\LibTiff.csproj", "{281EF657-40C0-432D-8AC4-E9ADDFD792B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwainDotNet", "TwainDotNet\TwainDotNet.csproj", "{857B8891-2932-484D-A9A8-D38B47108CF0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ecoscan.Client", "Ecoscan.Client\Ecoscan.Client.csproj", "{029213D9-2DE7-4542-8E54-DECFDDF25DBF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{281EF657-40C0-432D-8AC4-E9ADDFD792B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{281EF657-40C0-432D-8AC4-E9ADDFD792B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{281EF657-40C0-432D-8AC4-E9ADDFD792B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{281EF657-40C0-432D-8AC4-E9ADDFD792B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{857B8891-2932-484D-A9A8-D38B47108CF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{857B8891-2932-484D-A9A8-D38B47108CF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{857B8891-2932-484D-A9A8-D38B47108CF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{857B8891-2932-484D-A9A8-D38B47108CF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{029213D9-2DE7-4542-8E54-DECFDDF25DBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{029213D9-2DE7-4542-8E54-DECFDDF25DBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{029213D9-2DE7-4542-8E54-DECFDDF25DBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{029213D9-2DE7-4542-8E54-DECFDDF25DBF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3935CDA7-BE16-421A-B0A2-4E6F373CD865}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,95 @@
+﻿  Ecoscan command line scanner
+  =============================
+  This application can be configured and run using command line parameters
+  or using a configuration file. Sample configuration file is: Ecoscan.exe.config
+  
+  Possible parameters:
+  
+  SetDevice                  Sets the desired device by it's name.
+  
+  GetDevices                 Prints to the console window the supported devices
+                             Note: Not relevant to be used in the configuration file"
+  
+  UseConfigFile              Using this parameter the application will ignore all other parameters
+                             specified in the command line and will use only the configuration file.
+  
+  FileName                   A filename that will be used to save the output scanning.
+                             This parameter does not have prefix like e.g. ScanColor.
+  
+  ScanColor                  Possible values are: true / false
+  
+  ShowScannerUI              Possible values are: true / false
+                             When set to 'true' then the scanner default properties view will be displayed
+                             in order to allow complete control over the settings of the scanner.
+  
+  ScanResolution             Possible values are per scanner manual. Recommended values are between 100 and 300.
+  
+  ShouldTransferAllPages      Possible values are: true / false
+                              When set to 'false' only the first page will be taken from the scanner feeder.
+  
+  AutomaticDeskew             Possible values are: true / false
+                              When set to 'true' this will help getting aligned images incase the feeder keeps getting the pages badly.
+                              When set to 'false' the scanned pages will be saved as is.
+  
+  AutomaticBorderDetection    Possible values are: true / false
+                              When set to 'true' scanner will attemp to get the scanned image as close to their actual size and not a full A4 size.
+  
+  MergeMultiImage             Possible values are: true / false
+                              When set to 'true' the output file type will be either tiff (default) or pdf per file extension entered earlier.
+                              When set to 'false', if multiple pages are scanned and the file extension set
+                              is a single image type like jpeg, then the output file will have a sufix: e.g. 'temp_0.jpeg', 'temp_1.jpeg', etc.
+  
+  AbortWhenNoPaperDetectable  Possible values are: true / false
+                              Default value is 'false'.
+  
+  UseDocumentFeeder           Possible values are: true / false
+                              If not set then it will autodetect.
+  
+  UseDuplex                   Possible values are: true / false
+                              If not set then it will autodetect.
+  
+  FlipSideRotation            Possible values are: Book,FanFold
+                              Default value is 'Book'.
+  
+  AutomaticRotate             Possible values are: true / false
+                              Default value is 'False'.
+  
+  TransferCount               Possible values are: -1 / Number of pages to scan
+                              When set to '-1' all pages are scanned.
+  
+  UseAutoFeeder               Possible values are: true / false
+                              Default value is 'false'.
+  
+  UseAutoScanCache            Possible values are: true / false
+                              Default value is 'false'.
+  
+  Orientation                 Possible values are: Default,Rotate90,Rotate180,Rotate270
+  
+  PageTypeSize                Possible values are: None,A4,JISB5,UsLetter,UsLegal,A5,ISOB4,ISOB6,B,UsLedger,UsExecutive,A3,ISOB3,A6,C4,C5,C6,_4A0,_2A0,A0,A1,A2,A7,A8,A9,A10,ISOB0,ISOB1,ISOB2,ISOB5,ISOB7,ISOB8,ISOB9,ISOB10,JISB0,JISB1,JISB2,JISB3,JISB4,JISB6,JISB7,JISB8,JISB9,JISB10,C0,C1,C2,C3,C7,C8,C8,C9,C10,UsStatement,BusinessCard,MaxSize;
+  
+  Units                       Possible values are: Inches,Centimeters,Picas,Points,Twips,Pixels,Millimeters
+                              Default value is 'Inches'.
+  
+  AreaSize                    Values should be set as follow: [Left,Top,Right,Bottom]
+  
+  
+  Important: If you decide to use a configuration file then 'UseConfigFile' must be the first parameter.
+  
+  
+  Sample usage:
+  
+  Ecoscan.exe GetDevices
+      In this sample all available devices will be print out to console.
+  
+  Ecoscan.exe FileName:c:\temp\TestImage.jpeg ScanColor:true ShowScannerUI:false
+      In this sample the output file will be named TestImage.jpeg and be placed
+      under the folder c:\temp.
+      The output image will be in color and during the process the scanner UI will not be shown.
+  
+  Ecoscan.exe FileName:c:\temp\TestImage.jpeg SetDevice:"Integrated Twain Camera"
+      In this sample the selected device to get the images will be a laptop camera
+  
+  Ecoscan.exe UseConfigFile ScanColor:true ShowScannerUI:false
+      In this sample all configuration data will be taken from the config file
+      and the command line parameters 'ScanColor' and 'ShowScannerUI' will be ignored.
+
